@@ -1,4 +1,5 @@
 {
+    "auto_close": true,
     "auto_open": false,
     "auto_start": false,
     "drawing_grid_size": 25,
