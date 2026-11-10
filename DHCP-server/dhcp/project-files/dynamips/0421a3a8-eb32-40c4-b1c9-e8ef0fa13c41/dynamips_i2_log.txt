@@ -1,0 +1,55 @@
+Nov 05 21:45:06.545 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 05 21:45:06.548 HYPERVISOR: Started on IP = localhost, TCP port = 9347.
+Nov 05 21:45:06.984 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 05 21:45:06.985 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips 
+Nov 05 21:45:06.985 GENERAL: working_dir=C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips
+Nov 05 21:45:06.985 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\efd09049-df97-4a71-b6dd-ca86f7997c26 
+Nov 05 21:45:06.995 GENERAL: working_dir=C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\efd09049-df97-4a71-b6dd-ca86f7997c26
+Nov 05 21:45:06.996 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Nov 05 21:45:06.999 VM: VM R2 created.
+Nov 05 21:45:07.003 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Nov 05 21:45:07.004 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Nov 05 21:45:07.004 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:45:07.005 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Nov 05 21:45:07.006 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 05 21:45:07.007 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Nov 05 21:45:07.008 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:45:07.009 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60630d08 
+Nov 05 21:45:07.010 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:07.011 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Nov 05 21:45:07.012 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:45:07.013 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Nov 05 21:45:07.075 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:24.621 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:53.796 HYPERVISOR: exec_cmd: nio create_udp udp-e958e63d-0769-4ab3-81a8-7bdd4c6cd92c 10004 127.0.0.1 10005 
+Nov 05 21:45:54.125 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-e958e63d-0769-4ab3-81a8-7bdd4c6cd92c 
+Nov 05 21:45:54.127 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:46:04.809 HYPERVISOR: exec_cmd: nio create_udp udp-b1f1e3da-1a27-4031-b407-bb30ecee88e6 10012 127.0.0.1 10013 
+Nov 05 21:46:04.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-b1f1e3da-1a27-4031-b407-bb30ecee88e6 
+Nov 05 21:46:04.820 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:46:25.779 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:46:43.216 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 05 21:46:43.225 VM: VM Ghost created.
+Nov 05 21:46:43.365 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:46:43.365 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 05 21:46:43.367 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 21:46:43.367 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 05 21:46:43.368 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 21:46:43.369 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 05 21:46:43.370 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 05 21:46:43.851 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 05 21:46:43.854 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 05 21:46:44.065 VM: VM Ghost shutdown.
+Nov 05 21:46:44.066 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 05 21:46:44.067 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 05 21:46:44.067 VM: VM Ghost destroyed.
+Nov 05 21:46:44.078 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 05 21:46:44.079 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 21:46:44.079 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 05 21:46:44.088 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Nov 05 21:46:44.088 HYPERVISOR: exec_cmd: vm start R2 
+Nov 05 21:46:59.196 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:47:04.658 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:47:14.473 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 21:54:14.599 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 05 22:09:44.929 HYPERVISOR: exec_cmd: vm extract_config R2 

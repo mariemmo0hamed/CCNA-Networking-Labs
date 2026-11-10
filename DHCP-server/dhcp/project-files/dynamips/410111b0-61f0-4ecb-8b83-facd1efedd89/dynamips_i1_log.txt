@@ -1,0 +1,38 @@
+Nov 05 21:45:03.118 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 05 21:45:03.119 HYPERVISOR: Started on IP = localhost, TCP port = 9340.
+Nov 05 21:45:03.218 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 05 21:45:03.219 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips 
+Nov 05 21:45:03.231 GENERAL: working_dir=C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips
+Nov 05 21:45:03.232 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\18451639-c52e-49ac-9ab0-22f8930e06a9 
+Nov 05 21:45:03.233 GENERAL: working_dir=C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\18451639-c52e-49ac-9ab0-22f8930e06a9
+Nov 05 21:45:03.234 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Nov 05 21:45:03.245 VM: VM R1 created.
+Nov 05 21:45:03.250 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 05 21:45:03.251 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 05 21:45:03.252 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:45:03.252 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 05 21:45:03.254 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 05 21:45:03.255 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 05 21:45:03.256 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:45:03.256 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60630d08 
+Nov 05 21:45:03.260 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:03.260 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 05 21:45:03.264 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:45:03.265 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Nov 05 21:45:03.357 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:25.812 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/KA/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 05 21:45:53.339 HYPERVISOR: exec_cmd: nio create_udp udp-8fa39aad-bbea-455d-9ea5-6d450547aa43 10002 127.0.0.1 10003 
+Nov 05 21:45:53.777 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-8fa39aad-bbea-455d-9ea5-6d450547aa43 
+Nov 05 21:45:53.777 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:46:00.835 HYPERVISOR: exec_cmd: nio create_udp udp-2bec7eeb-5605-44ec-8b1c-36c737082c4b 10008 127.0.0.1 10009 
+Nov 05 21:46:00.848 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-2bec7eeb-5605-44ec-8b1c-36c737082c4b 
+Nov 05 21:46:00.849 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:46:25.778 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:46:44.080 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 05 21:46:44.088 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\KA\GNS3\projects\DHCP-server\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-256.ghost 
+Nov 05 21:46:44.088 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 05 21:46:44.094 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Nov 05 21:46:44.097 HYPERVISOR: exec_cmd: vm start R1 
+Nov 05 21:47:14.477 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 21:53:44.594 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 05 22:11:44.961 HYPERVISOR: exec_cmd: vm extract_config R1 
